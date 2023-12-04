@@ -1,1 +1,9 @@
+.vscode
+
 node_modules
+
+yarn-error.log
+
+.env
+artifacts
+cache
