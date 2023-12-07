@@ -1,8 +1,8 @@
 const fs = require("fs"); 
-const {artifactsAbiLocatio, frontEndAbiLocation} = require("../helper-hardhat-config")
+const {artifactsAbiLocation, frontEndAbiLocation} = require("../helper-hardhat-config")
 
 async function main() {
-    const artConsumerEncoded = fs.readFileSync(artifactsAbiLocatio,"utf-8")
+    const artConsumerEncoded = fs.readFileSync(artifactsAbiLocation,"utf-8")
     const artConsumer = JSON.parse(artConsumerEncoded)
     const abiConsumer = JSON.stringify(artConsumer["abi"])
     fs.writeFileSync(frontEndAbiLocation, abiConsumer)

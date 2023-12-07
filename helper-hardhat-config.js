@@ -4,14 +4,16 @@ const networkConfig = {
         ethUsdPriceFeed: "0x694AA1769357215DE4FAC081bf1f309aDC325306",
     },
 }
-const artifactsAbiLocatio = "./artifacts/contracts/FunctionsConsumerExample.sol/FunctionsConsumerExample.json"
-const frontEndAbiLocation = "./abi/FunctionsConsumerExample.json"
+const artifactsAbiLocation = "./artifacts/contracts/Validata.sol/Validata.json"
+const frontEndContractsFile = "../validata-frontend/constants/netowrkMapping.json"
+const frontEndAbiLocation = "../validata-frontend/constants/validata.json"
 const routerAddressMumbai = "0x6E2dc0F9DB014aE19888F539E59285D2Ea04244C"
 const developmentChains = ["hardhat", "localhost"]
 module.exports = {
     networkConfig,
     developmentChains,
     routerAddressMumbai,
-    artifactsAbiLocatio,
-    frontEndAbiLocation
+    artifactsAbiLocation,
+    frontEndAbiLocation,
+    frontEndContractsFile
 }
